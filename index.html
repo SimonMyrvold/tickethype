@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketHype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+<script defer src="/code.js"></script>
+</head>
+<body>
+    <!-- Side Content -->
+    <div id="hamburgerContent" class="flex flex-col fixed z-10 right-0 gap-4 h-full w-[25%] bg-black text-white text-center pt-[40%]">
+        <a class="bignoodle text-lg hover:text-gray-400 transition-colors" href="#">Contact</a>
+        <a class="bignoodle text-lg hover:text-gray-400 transition-colors" href="#">About</a>
+        <a class="bignoodle text-lg hover:text-gray-400 transition-colors" href="#">Help</a>
+        <a class="bignoodle text-lg hover:text-gray-400 transition-colors" href="#">Home</a>
+    </div>
+
+    <div id="body" class="relative">
+
+        <!-- Navbar -->
+        <div class="border-y-2 p-3 w-full h-[4.5rem] flex flex-row fixed gap-[5vh] justify-center bg-white" id="bgb">
+            <h1 class="w-1/3 m-auto text-3xl bignoodle text-center">
+                TicketHype
+            </h1>
+
+            <div class="w-1/3 flex flex-row">
+                <input id="textInput" class="box-border border-gray-300 border-2 rounded-3xl w-full h-12 text-center m-auto" type="text" placeholder="Search event here..."></input>
+            </div>
+
+            <div class="w-1/3 flex flex-row">
+                <!-- Navbar At Fullscreen -->
+                <nav id="navbarFull" class="pr-[60%] text-large flex flex-row gap-16 m-auto w-[10%]">
+                        <a class="bignoodle hover:text-slate-600 transition-colors" href="/contact.html">Contact</a>
+                        <a class="bignoodle hover:text-slate-600 transition-colors" href="/about.html">About</a>
+                        <a class="bignoodle hover:text-slate-600 transition-colors" href="/help.html">Help</a>
+                        <a class="bignoodle hover:text-slate-600 transition-colors" href="/home.html">Home</a>
+                </nav>
+                <!-- Navbar at min 1300px -->
+                <div id="hamburgerMenu" class="z-50 mt-auto mb-auto" onclick="hamburgerToggle()">
+                    <div id="hamburgerLine1" class="w-[35px] h-[1px] bg-black m-2"></div>
+                    <div id="hamburgerLine2" class="w-[35px] h-[1px] bg-black m-2"></div>
+                    <div id="hamburgerLine3" class="w-[35px] h-[1px] bg-black m-2"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+    <!-- Intro Image -->
+    <div class="w-full h-1/2 pt-16">
+        <img class="w-full h-full" src="/img/Namnlöst-2.png" alt="placeholder">
+    </div>
+    
+    
+
+    <div class="w-full flex justify-center">
+        <div class="flex flex-col">
+            <div class="flex flex-row ml-5 mt-20 space-x-5">
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit self-center ml-1" src="/icons/hand.png" alt="">
+                    <h1 class="bignoodle self-center mr-1 text-xl text-slate-400">
+                        Rock
+                    </h1>
+                </div>
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit self-center ml-1" src="/icons/saxophone.png" alt="">
+                    <h1 class="bignoodle self-center mr-1 text-xl text-slate-400">
+                        Jazz
+                    </h1>
+                </div>
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit self-center ml-1" src="/icons/breakdance2.png" alt="">
+                    <h1 class="bignoodle self-center mr-1 text-xl text-slate-400">
+                        HipHop
+                    </h1>
+                </div>
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit self-center ml-2" src="/icons/sound.png" alt="">
+                    <h1 class="bignoodle ml-2 self-center mr-1 text-xl text-slate-400">
+                        RnB
+                    </h1>
+                </div>
+            </div>
+            <div class="flex flex-row ml-5 mt-5 space-x-5">
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit self-center ml-1" src="/icons/trumpet.png" alt="">
+                    <h1 class="bignoodle self-center mr-1 text-xl text-slate-400">
+                        Blues
+                    </h1>
+                </div>
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit ml-1" src="/icons/breakdance.png" alt="">
+                    <h1 class="bignoodle self-center text-xl mr-1 text-slate-400">
+                        Dance
+                    </h1>
+                </div>
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit ml-1" src="/icons/beat-box.png" alt="">
+                    <h1 class="bignoodle mr-1 self-center text-xl text-slate-400">
+                        Rap
+                    </h1>
+                </div>
+                <div class="box-border flex border-2 w-fit pr-2 h-10 rounded-3xl hover:shadow-lg cursor-pointer">
+                    <img class="h-full rounded-3xl w-fit ml-2 mr-1" src="/icons/music.png" alt="">
+                    <h1 class="bignoodle mr-1 self-center text-xl text-slate-400">
+                        Lofi
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <h1 class="justify-center flex mt-[2%] text-xl bignoodle">
+            Popular in your city:
+        </h1>
+        <div class="w-full flex flex-row space-x-[2%] justify-center mt-10">
+            
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/dancenew.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Fall Dance</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/gettyimages-1183414292-1-_slide-edff8c3fe6afcab5c6457e3c7bd011f5c1745161-s1100-c50.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Summer Spirit</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+            
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/hiphop.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Hip Top</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/poooster.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">MusicO</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/lofi.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">LoFILa</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+        </div>
+        
+                <h1 class="justify-center flex mt-24 text-xl bignoodle">
+            Based on your taste:
+        </h1>
+        <div class="w-full flex flex-row space-x-[2%] justify-center mt-10">
+            
+            
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/rap.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">The ART of RAP</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/rnb.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Rock & roll</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/rock-of-ages-allstar-meta.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Rock of Ages</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/maxresdefault.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Blues Yrio</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+    
+            <div class="box-border border-2 rounded-3xl rounded-t-3xl border-slate-200 w-52 h-64 hover shadow-2xl">
+                <div class="h-1/2 w-full">
+                    <img class="h-full w-full rounded-t-3xl" src="/img/pictureconcert.jpg" alt="">
+                </div>
+                <h1 class="justify-center flex font-bold text-xl pt-3 bignoodle">Music Concert</h1>
+                <h4 class="text-center">This event is going to get crazy, hurry buy tickets before they're sold out!</h4>
+            </div>
+            </div>
+    
+            <div class="flex justify-center w-full mt-16">
+                    <h1 class="bignoodle">
+                        Tags:
+                    </h1>
+                </div>
+    
+    
+                <div class="flex justify-center p-5 space-x-5 w-full flex-row">
+    
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Rock & Roll</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Blues</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Eminem</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Metallica</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Rihanna</h1>
+                    </div>
+                </div>
+    
+                <div class="flex justify-center space-x-5 w-full flex-row mb-[5%]">
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Tickets</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Concert</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Singing</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">RnB</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">HipHop</h1>
+                    </div>
+                    <div class="box-border border-2 border-slate-300 w-fit p-3 h-11 flex justify-center rounded-3xl">
+                        <h1 class="text-lg bignoodle self-center">Rap</h1>
+                    </div>
+                </div>
+            
+                
+            <div class=" w-full h-1/4 bg-black">
+                <footer class="self-center">
+                    <h1 class="text-3xl text-slate-50 ml-2">
+                        TicketHype 
+                    </h1>
+                </footer>
+            </div>
+    
+        </div>
+    </body>
+</div>
+    </html>
